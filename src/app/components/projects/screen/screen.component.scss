@@ -1,0 +1,73 @@
+@import "../../../../styles.scss";
+
+.screen-container {
+  h3{
+    font-size: larger;
+    color: $cor3;
+    margin-bottom: 1rem;
+  }
+  figure {
+    width: 300px;
+    height: 600px;
+    margin-bottom: 10em;
+
+    img.smartphone {
+      border: 2px solid $bd-color;
+      border-radius: $bd-radius;
+      box-shadow: 5px 5px 2px 5px rgba(0, 0, 0, 0.3);
+      background-color: $bg-color;
+      padding: 0.5rem;
+      padding-bottom: 2rem;
+      padding-top: 1rem;
+      width: 300px;
+      height: 600px;
+      display: inline-block;
+      object-fit: cover;
+      object-position: top;
+
+      &:hover {
+        animation: slideDown 10s linear both;
+        cursor: pointer;
+      }
+    }
+    figcaption {
+      font-size: 1.2rem;
+
+      .technologies-title{
+        margin-top: 0.5rem;
+        color: $cor9;
+      }
+
+      .technologies {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+        li {
+          display: initial;
+          color: var(--cor);
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $cor9;
+        &:hover {
+          color: $cor3;
+        }
+      }
+    }
+  }
+}
+
+.div-tablet {
+  display: none;
+}
+
+@keyframes slideDown {
+  from {
+    object-position: top;
+  }
+  to {
+    object-position: bottom;
+  }
+}
+

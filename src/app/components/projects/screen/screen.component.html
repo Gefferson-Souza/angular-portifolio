@@ -1,0 +1,25 @@
+<article class="screen-container">
+  <h3 class="project-title">{{projectTitle}}</h3>
+  <figure>
+    <img
+    (click)="pauseAnimation($any($event.target))"
+     [src]="imgSrcSmartphone"
+     alt="Projeto"
+     class="smartphone"
+     />
+    <figcaption>
+      <h3 class="technologies-title" >Tecnologias</h3>
+      <ul class="technologies">
+        <li *ngFor="let tech of technologies" [style]="tech.color"><i [class]="tech.icon"></i>{{tech.name}}</li>
+      </ul>
+      <a *ngFor="let link of links" [href]="link.link" target="_blank" rel="noopener"><i [style]="link.color" [class]="link.icon"></i></a>
+    </figcaption>
+  </figure>
+  <div class="div-tablet">
+    <figure>
+      <img [src]="imgSrcTablet" alt="Projeto 1, Emestone" class="tablet" />
+      <div class="led">
+      </div>
+    </figure>
+  </div>
+</article>

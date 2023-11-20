@@ -21,6 +21,8 @@ $bd-radius: 15px;
 $font-size: 13px;
 $font-scale: 1;
 
+$cubic: cubic-bezier(0.5, 0, 0.5, 1);
+
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,400italic,700italic,900italic);
 
 * {

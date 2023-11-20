@@ -12,7 +12,12 @@
   p {
     color: $cor0;
     font-weight: bold;
-    margin: 0;
+    &.text-bottom{
+      margin-bottom: 0.5rem;
+    }
+    &.text-top{
+      margin-top: 0.5rem;
+    }
   }
 
   h1 {
@@ -24,25 +29,28 @@
     font-style: italic;
     margin: 0.5rem 0.5rem;
     overflow: hidden;
-    animation: text-shadow 1.5s ease-in-out;
+    animation: text-shadow 1.5s ease-in-out both;
     animation-delay: 1s;
     font-weight: 900;
     line-height: 1;
-
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
     .title-icons {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 1.5rem;
+      gap: 1rem;
       border-radius: $bd-radius;
       background-color: $cor0;
-      margin-top: 0.5rem;
+      width: 65%;
+      margin: 0.5rem 1rem;
 
       i,
       svg {
-        animation: slideLogo 0.5s ease-in-out both;
+        animation: slideLogo 0.4s $cubic both;
         animation-delay: var(--i);
-        font-size: $font-size;
+        font-size: $font-size - 1rem;
       }
 
       .fa-square-js {
@@ -56,10 +64,12 @@
       }
 
       svg {
-        width: $font-size - 0.3rem;
+        width: $font-size - 1.2rem;
       }
     }
   }
+
+
 }
 
 @keyframes text-shadow {
