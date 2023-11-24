@@ -1,6 +1,9 @@
 @import "../../../../styles.scss";
 
 .screen-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   h3{
     font-size: larger;
     color: $cor3;

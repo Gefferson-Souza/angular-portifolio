@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { TitleComponent } from './components/title/title.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ScreenComponent } from './components/projects/screen/screen.component';
+import { CarrouselComponent } from './components/projects/carrousel/carrousel.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ScreenComponent } from './components/projects/screen/screen.component';
     TitleComponent,
     ProjectsComponent,
     ScreenComponent,
+    CarrouselComponent,
   ],
   imports: [
     BrowserModule,
